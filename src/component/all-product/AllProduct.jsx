@@ -16,6 +16,8 @@ const AllProduct = () => {
           .then((data) => setHeroAllProduct(data));
       }, []);
 
+      
+
 
     return (
         <div className="w-11/12 mx-auto my-20">
@@ -26,7 +28,7 @@ const AllProduct = () => {
     All Product
     </h2>
 
-    <Link href='/weygthwye' className="underline text-[#F48721] text-[16px] flex items-center gap-1 cursor-pointer">
+    <Link href='/products' className="underline text-[#F48721] text-[16px] flex items-center gap-1 cursor-pointer">
      See All  <LuMoveRight size={16} /> 
     </Link>
 

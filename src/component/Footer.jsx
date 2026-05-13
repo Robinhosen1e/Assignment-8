@@ -10,7 +10,7 @@ const Footer = () => {
         <div>
             <footer className="footer sm:footer-horizontal bg-base-200 text-base-content p-10">
   <aside className=''>
-    <Image src={imgs} height={100} width={100} className='mb-2' />
+    <Image src={imgs} height={100} width={100} alt='logo' className='mb-2' />
 
     <div>
       <p className='font-bold text-gray-700 text-xl'>
