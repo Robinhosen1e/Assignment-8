@@ -3,3 +3,14 @@
 @plugin "daisyui";
 
 
+.swiper-pagination-bullet {
+  background-color: white !important;
+  opacity: 1 !important;
+  width: 12px;
+  height: 12px;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #f3780d !important;
+}
+
