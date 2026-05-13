@@ -10,12 +10,12 @@ import TopSellingProductCard from './TopSellingProductCard';
 
 const TopSellingProduct = () => {
 
-      const [flashSale, setFlashSale] = useState([]);
+      const [topSellingProducts, setTopSellingProducts] = useState([]);
     
       useEffect(() => {
         fetch("http://localhost:5000/topSellingProducts")
           .then((res) => res.json())
-          .then((data) => setFlashSale(data));
+          .then((data) => setTopSellingProducts(data));
       }, []);
     
     
@@ -61,7 +61,7 @@ const TopSellingProduct = () => {
 
 
         <Carousel responsive={responsive}>
-  {flashSale.map((item) => (
+  {topSellingProducts.map((item) => (
     <TopSellingProductCard
       key={item.id}
       item={item}

@@ -1491,5 +1491,77 @@
       "category": "T-Shirt",
       "image": "https://i.ibb.co.com/7xbf3pfd/a0a2fa0b8230f0bfd5a783dd2a95ba3b.jpg"
     }
+  ],
+   "customerReviews": [
+    {
+      "id": 1,
+      "customerName": "Arafat Hossain",
+      "customerImage": "https://images.unsplash.com/photo-1506277886164-e25aa3f4ef7f",
+      "profession": "Student",
+      "review": "The quality of the t-shirt was honestly better than I expected. The fabric feels soft and premium, and the fitting was perfect for casual streetwear styling."
+    },
+    {
+      "id": 2,
+      "customerName": "Nusrat Jahan",
+      "customerImage": "https://images.unsplash.com/photo-1488426862026-3ee34a7d66df",
+      "profession": "Housewife",
+      "review": "I ordered a watch for my husband and he really liked it. The packaging was clean and the product looked exactly like the pictures."
+    },
+    {
+      "id": 3,
+      "customerName": "Rakib Hasan",
+      "customerImage": "https://images.unsplash.com/photo-1506277886164-e25aa3f4ef7f",
+      "profession": "Banker",
+      "review": "The formal shirt quality is excellent for the price range. Comfortable fabric and elegant design for office wear."
+    },
+    {
+      "id": 4,
+      "customerName": "Tamanna Akter",
+      "customerImage": "https://images.unsplash.com/photo-1524504388940-b1c1722653e1",
+      "profession": "Job Holder",
+      "review": "The sunglasses looked super stylish and premium. Very comfortable even after wearing them for long hours."
+    },
+    {
+      "id": 5,
+      "customerName": "Mehedi Rahman",
+      "customerImage": "https://images.unsplash.com/photo-1504257432389-52343af06ae3",
+      "profession": "Freelancer",
+      "review": "I bought cargo pants and the quality surprised me. Perfect for casual outfits and travel."
+    },
+    {
+      "id": 6,
+      "customerName": "Sadia Islam",
+      "customerImage": "https://images.unsplash.com/photo-1488426862026-3ee34a7d66df",
+      "profession": "Teacher",
+      "review": "Very happy with the customer support and product quality. The cap was comfortable and stylish."
+    },
+    {
+      "id": 7,
+      "customerName": "Jubayer Ahmed",
+      "customerImage": "https://images.unsplash.com/photo-1506277886164-e25aa3f4ef7f",
+      "profession": "Businessman",
+      "review": "The watch has an amazing premium look. Everyone in my office asked me where I bought it from."
+    },
+    {
+      "id": 8,
+      "customerName": "Faria Khan",
+      "customerImage": "https://images.unsplash.com/photo-1524504388940-b1c1722653e1",
+      "profession": "University Student",
+      "review": "I loved the oversized t-shirt collection. The prints are trendy and the fabric feels breathable."
+    },
+    {
+      "id": 9,
+      "customerName": "Shakib Chowdhury",
+      "customerImage": "https://images.unsplash.com/photo-1504257432389-52343af06ae3",
+      "profession": "Engineer",
+      "review": "The delivery was fast and the packaging looked professional. The jeans quality was excellent."
+    },
+    {
+      "id": 10,
+      "customerName": "Mim Akter",
+      "customerImage": "https://images.unsplash.com/photo-1524504388940-b1c1722653e1",
+      "profession": "Content Creator",
+      "review": "I ordered sunglasses and a cap together and both products looked amazing in real life."
+    }
   ]
 }
