@@ -48,7 +48,7 @@ const TopSellingProduct = () => {
 
       <div className='border-b-2 border-[#F48721] pb-2 mb-8 justify-between flex items-center'>
          
-    <h2 class="text-3xl font-bold text-gray-800 flex items-center gap-1.5">
+    <h2 class="text-3xl font-bold text-[#F48721] flex items-center gap-1.5">
      Popular Products
     </h2>
 

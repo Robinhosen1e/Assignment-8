@@ -1,4 +1,5 @@
 // import BannerSlider from "@/components/Slider";
+import AllProduct from "@/component/all-product/AllProduct";
 import Slider from "@/component/Banner";
 import Category from "@/component/Category";
 import CustomerReview from "@/component/customer-review/CustomerReview";
@@ -12,6 +13,7 @@ export default function Home() {
     <div>
       <Slider />
       <Category  /> 
+      <AllProduct />
       <FlashSale />
       <TopSellingProduct />
       <CustomerReview />

@@ -1563,5 +1563,74 @@
       "profession": "Content Creator",
       "review": "I ordered sunglasses and a cap together and both products looked amazing in real life."
     }
+  ],
+
+  "allProduct": [
+    {
+    "id": 1,
+    "name": "Cream Vintage Flannel Shirt",
+    "brand": "CozyStyle",
+    "price": 38,
+    "rating": 4.8,
+    "stock": 9,
+    "description": "This cream and beige check flannel shirt is a great example of warm and cozy vintage fashion. Its earthy tones create a natural and premium vibe. It is ideal for winter season, outdoor travel, and casual hangouts, offering both style and comfort. The soft fabric and relaxed fit make it perfect for layering. It pairs beautifully with jeans, boots, or hoodies, creating a fashionable and aesthetic look.",
+    "image": "https://i.ibb.co.com/HfkQwG7W/e5f70cf1324bcd533ea61ad7b79e6063.jpg",
+    "category": "Shirt"
+  },
+  {
+    "id": 2,
+    "name": "Midnight Matte Black Watch",
+    "brand": "NoirX",
+    "price": 70,
+    "rating": 4.7,
+    "stock": 9,
+    "description": "Modern matte black wristwatch designed with a clean minimalist dial and a premium metal strap for a bold fashion statement. The stylish monochrome finish creates a sleek and powerful appearance that complements modern outfits perfectly. Lightweight and comfortable design allows long hours of wear without discomfort. Built with durable materials to ensure reliability and long-lasting use for everyday activities. Ideal for casual fashion, parties, office wear, and luxury street-style looks.",
+    "image": "https://i.ibb.co.com/pVySr4F/d90526a55a3574235e1989efd0235e21.jpg",
+    "category": "Watch"
+  },
+  {
+"id": 3,
+"name": "He Is Rizzin Vintage Green Oversized T-Shirt",
+"brand": "Urban Pulse",
+"price": 18,
+"rating": 4.8,
+"stock": 12,
+"description": "This vintage green oversized t-shirt combines sporty vibes with modern streetwear fashion. Featuring a bold basketball-inspired graphic and stylish typography, it creates a trendy and eye-catching look. The soft washed fabric provides excellent comfort for everyday wear, while the oversized fit gives a relaxed and fashionable appearance.",
+"image": "https://i.ibb.co.com/DHNDmS0p/225a83c36ce939a7554a94a845b6eb94.jpg",
+"category": "T-Shirt"
+},
+{
+    "id": 4,
+    "name": "Shadow Vintage Cap",
+    "brand": "UrbanEdge",
+    "price": 21,
+    "rating": 4.6,
+    "stock": 16,
+    "description": "This dark vintage washed cap offers a rugged and stylish streetwear look. Its faded texture gives a unique and modern appearance. It is perfect for daily wear, travelling, and outdoor activities. The dark tone matches easily with almost any outfit. The adjustable fit and comfortable fabric ensure all-day comfort.",
+    "image": "https://i.ibb.co.com/9DnsGtf/3d8431407c2aa54e194a20a540935d3a.jpg",
+    "category": "Caps"
+  },
+   {
+    "id": 5,
+    "name": "Tactical Cargo Wide Pants",
+    "brand": "AdventureX",
+    "price": 42,
+    "rating": 4.9,
+    "stock": 11,
+    "description": "Tactical cargo wide pants designed for outdoor adventures and bold streetwear styling. Made with durable fabric and multiple utility pockets for both fashion and functionality. The oversized relaxed fit ensures maximum comfort and freedom of movement during long hours of use. Perfect for travel, hiking, casual fashion, and modern urban streetwear outfits. The rugged design combined with premium quality materials creates a powerful and stylish appearance.",
+    "image": "https://i.ibb.co.com/PGg6D32B/87c916756fd8512d368c75d812628062.jpg",
+    "category": "Pants"
+  },
+  {
+    "id": 6,
+    "name": "Shadow Rider Sports Glass",
+    "brand": "SpeedX",
+    "price": 35,
+    "rating": 4.9,
+    "stock": 8,
+    "description": "Designed for sports and bike riding, these sunglasses protect your eyes from dust and sunlight. The lightweight and durable build ensures comfort during long hours of use.",
+    "image": "https://i.ibb.co.com/3yjrqc2f/5ac9e39a96c3f48ee134035fd8c94832.jpg",
+    "category": "Sunglasses"
+  }
   ]
 }
