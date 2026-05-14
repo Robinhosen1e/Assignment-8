@@ -1,6 +1,7 @@
 
 import imgs from '@/image/online store logo.png'
 import Image from 'next/image';
+import Link from 'next/link';
 import { BiLogoInstagramAlt } from 'react-icons/bi';
 import { FaFacebookF, FaYoutube } from 'react-icons/fa';
 
@@ -8,7 +9,7 @@ import { FaFacebookF, FaYoutube } from 'react-icons/fa';
 const Footer = () => {
     return (
         <div>
-            <footer className="footer sm:footer-horizontal bg-base-200 text-base-content p-10">
+            <footer className="footer sm:footer-horizontal bg-white text-base-content p-10">
   <aside className=''>
     <Image src={imgs} height={100} width={100} alt='logo' className='mb-2' />
 
@@ -33,30 +34,31 @@ const Footer = () => {
   </aside>
   <nav>
     <h6 className="text-gray-800 text-[18px] font-semibold mb-2">Information</h6>
-    <a className="hover:text-[#F48721] text-gray-600 cursor-pointer">About us</a>
-    <a className="hover:text-[#F48721] text-gray-600 cursor-pointer">Contact us</a>
-    <a className="hover:text-[#F48721] text-gray-600 cursor-pointer">Company Information</a>
-    <a className="hover:text-[#F48721] text-gray-600 cursor-pointer">Privacy Policy</a>
-    <a className="hover:text-[#F48721] text-gray-600 cursor-pointer">Terms & Conditions</a>
+    <Link href="/about" className="hover:text-[#F48721] text-gray-600 cursor-pointer">About us</Link>
+    <Link href="/ContactUs" className="hover:text-[#F48721] text-gray-600 cursor-pointer">Contact us</Link>
+    <Link href="/CompanyInformation" className="hover:text-[#F48721] text-gray-600 cursor-pointer">Company Information</Link>
+    <Link href="/PrivacyPolicy" className="hover:text-[#F48721] text-gray-600 cursor-pointer">Privacy Policy</Link>
+    <Link href="/TermsConditions" className="hover:text-[#F48721] text-gray-600 cursor-pointer">Terms & Conditions</Link>
 
   </nav>
   <nav>
     <h6 className="text-gray-800 text-[18px] font-semibold mb-2">Shop By</h6>
-    <a className="hover:text-[#F48721] text-gray-600 cursor-pointer">Cap</a>
-    <a className="hover:text-[#F48721] text-gray-600 cursor-pointer">Shirt</a>
-    <a className="hover:text-[#F48721] text-gray-600 cursor-pointer">Pant</a>
-    <a className="hover:text-[#F48721] text-gray-600 cursor-pointer">T-shirt</a>
-    <a className="hover:text-[#F48721] text-gray-600 cursor-pointer">Bag</a>
-    <a className="hover:text-[#F48721] text-gray-600 cursor-pointer">Watches</a>
-    <a className="hover:text-[#F48721] text-gray-600 cursor-pointer">Sunglasses</a>
+
+    <Link href="/products" className="hover:text-[#F48721] text-gray-600 cursor-pointer">T-shirt</Link>
+    <Link href="/products" className="hover:text-[#F48721] text-gray-600 cursor-pointer">Shirt</Link>
+    <Link href="/products" className="hover:text-[#F48721] text-gray-600 cursor-pointer">Pant</Link>
+    <Link href="/products" className="hover:text-[#F48721] text-gray-600 cursor-pointer">Bag</Link>
+    <Link href="/products" className="hover:text-[#F48721] text-gray-600 cursor-pointer">Watches</Link>
+    <Link href="/products" className="hover:text-[#F48721] text-gray-600 cursor-pointer">Sunglasses</Link>
+    <Link href="/products" className="hover:text-[#F48721] text-gray-600 cursor-pointer">Cap</Link>
+    <Link href="/products" className="hover:text-[#F48721] text-gray-600 cursor-pointer">Shoes</Link>
   </nav>
   <nav>
     <h6 className="text-gray-800 text-[18px] font-semibold mb-2">Support</h6>
-    <a className="hover:text-[#F48721] text-gray-600 cursor-pointer">Support Center</a>
-    <a className="hover:text-[#F48721] text-gray-600 cursor-pointer">How to Order</a>
-    <a className="hover:text-[#F48721] text-gray-600 cursor-pointer">Payment</a>
-    <a className="hover:text-[#F48721] text-gray-600 cursor-pointer">FAQ</a>
-
+     <Link href="/SupportCenter" className="hover:text-[#F48721] text-gray-600 cursor-pointer">Support Center</Link>
+    <Link href="/HowToOrder" className="hover:text-[#F48721] text-gray-600 cursor-pointer">How to Order</Link>
+    <Link href="/Payment" className="hover:text-[#F48721] text-gray-600 cursor-pointer">Payment</Link>
+    <Link href="/FAQ" className="hover:text-[#F48721] text-gray-600 cursor-pointer">FAQ</Link>
   </nav>
   
 </footer>
