@@ -1,6 +1,12 @@
 import Image from "next/image";
+import Link from "next/link";
 
 const FlashSaleCard = ({item}) => {
+
+    const slug = item.name.toLowerCase().replace(/[^a-z0-9\s-]/g, '').trim().replace(/\s+/g, '-');
+
+
+
     console.log('flash', item);
 
     console.log('image' , item.image );
@@ -31,7 +37,11 @@ const FlashSaleCard = ({item}) => {
 
    <div className="flex ">
      <button className="btn border text-sx font-medium text-gray-800 mb-2 border-[#f3790d] hover:bg-[#F48721] cursor-pointer hover:text-white py-0.5 px-5 rounded mr-4">Buy</button>
-    <button className=" btn border text-sx font-medium  mb-2 border-[#f3790d] bg-[#F48721] text-white py-1 px-3 cursor-pointer rounded mr-2">View Detail</button>
+    <button className=" btn border text-sx font-medium  mb-2 border-[#f3790d] bg-[#F48721] text-white py-1 px-3 cursor-pointer rounded mr-2">
+
+        <Link href={`/flashsale/${slug}`} >View Detail</Link>
+
+    </button>
    </div>
   
   </div>

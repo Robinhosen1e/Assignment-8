@@ -50,7 +50,7 @@ const FlashSale = () => {
     <BsPercent size={26} className='bg-[#F48721] text-white p-1.5 rounded-full' />  Flash Sale
     </h2>
 
-    <Link href='/weygthwye' className="underline text-[#F48721] text-[16px] flex items-center gap-1 cursor-pointer">
+    <Link href='/flashsale' className="underline text-[#F48721] text-[16px] flex items-center gap-1 cursor-pointer">
      See All  <LuMoveRight size={16} /> 
     </Link>
 

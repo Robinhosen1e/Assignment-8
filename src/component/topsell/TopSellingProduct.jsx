@@ -52,7 +52,7 @@ const TopSellingProduct = () => {
      Popular Products
     </h2>
 
-    <Link href='/weygthwye' className="underline text-[#F48721] text-[16px] flex items-center gap-1 cursor-pointer">
+    <Link href='/popularproducts' className="underline text-[#F48721] text-[16px] flex items-center gap-1 cursor-pointer">
      See All  <LuMoveRight size={16} /> 
     </Link>
 

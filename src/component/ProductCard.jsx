@@ -1,6 +1,10 @@
 import Image from "next/image";
+import Link from "next/link";
 
 const ProductCard = ({item}) => {
+
+  const slug = item.name.toLowerCase().replace(/[^a-z0-9\s-]/g, '').trim().replace(/\s+/g, '-');
+
     return (
         <div>
                     <div>
@@ -26,10 +30,14 @@ const ProductCard = ({item}) => {
                                     <p className="my-2"><span className="text-gray-800 font-extrabold mr-1">Rating:</span>{item.rating}</p>
                                 
                                     <div className="bg-amber-500 p-1 rounded-2xl text-xs w-12 text-center mb-4 text-white">{item.category}</div>
-                                
+                                    
                                    <div className="flex  mt-9">
                                      <button className="btn border text-sx font-medium text-gray-800 mb-2 border-[#f3790d] hover:bg-[#F48721] cursor-pointer hover:text-white py-0.5 px-5 rounded mr-4">Buy</button>
-                                    <button className=" btn border text-sx font-medium  mb-2 border-[#f3790d] bg-[#F48721] text-white py-1 px-3 cursor-pointer rounded mr-2">View Detail</button>
+                                    <button className=" btn border text-sx font-medium  mb-2 border-[#f3790d] bg-[#F48721] text-white py-1 px-3 cursor-pointer rounded mr-2">
+
+                                     <Link href={`/products/${slug}`} >View Detail</Link>
+
+                                    </button>
                                    </div>
                                   
                                   </div>
@@ -40,3 +48,5 @@ const ProductCard = ({item}) => {
 };
 
 export default ProductCard;
+
+
