@@ -6,6 +6,8 @@ import { BsPercent } from 'react-icons/bs';
 import { LuMoveRight } from 'react-icons/lu';
 import Link from 'next/link';
 import TopSellingProductCard from './TopSellingProductCard';
+import { motion } from 'framer-motion';
+
 
 
 const TopSellingProduct = () => {
@@ -60,7 +62,13 @@ const TopSellingProduct = () => {
 
 
 
-        <Carousel responsive={responsive}>
+       <motion.div
+       initial={{ opacity: 0, y: 100 }}
+      animate={{ opacity: 1, y: 0.1 }}
+      transition={{ duration: 1.9 }}
+       
+       >
+         <Carousel responsive={responsive}>
   {topSellingProducts.map((item) => (
     <TopSellingProductCard
       key={item.id}
@@ -68,7 +76,8 @@ const TopSellingProduct = () => {
     />
   ))}
 </Carousel>
-    </div>
+    </motion.div>
+       </div>
         </div>
     );
 };

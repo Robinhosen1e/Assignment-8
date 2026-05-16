@@ -2,6 +2,8 @@
 
 import ProductCard from "@/component/ProductCard";
 import { useEffect, useState } from "react";
+import { motion } from 'framer-motion';
+
 
 const ProductPage = () => {
   const [product, setProduct] = useState([]);
@@ -55,14 +57,19 @@ const ProductPage = () => {
       
 
       {/* Product Grid */}
-      <div className="grid grid-cols-3 gap-4">
+      <motion.div
+      initial={{ opacity: 0, y: 100 }}
+      animate={{ opacity: 1, y: 0.1 }}
+      transition={{ duration: 1 }}
+      
+      className="grid grid-cols-3 gap-4">
         {filteredProducts.map((item) => (
           <ProductCard
             key={item.id}
             item={item}
           />
         ))}
-      </div>
+      </motion.div>
     </div>
   );
 };

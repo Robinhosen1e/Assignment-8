@@ -4,6 +4,8 @@ import AllProductCard from "./AllProductCard";
 import { LuMoveRight } from "react-icons/lu";
 import Link from "next/link";
 import { BsPercent } from "react-icons/bs";
+import { motion } from 'framer-motion';
+
 
 
 const AllProduct = () => {
@@ -35,10 +37,15 @@ const AllProduct = () => {
       </div>
 
 
-           <div className="grid grid-cols-3 gap-4 ">
+           <motion.div 
+           initial={{ opacity: 0, y: 100 }}
+      animate={{ opacity: 1, y: 0.1 }}
+      transition={{ duration: 1.4 }}
+
+            className="grid grid-cols-3 gap-4 ">
              {heroAllProduct.map((item) => ( <AllProductCard key={item.id} item={item}  />
   ))}
-           </div>
+           </motion.div>
         </div>
     );
 };

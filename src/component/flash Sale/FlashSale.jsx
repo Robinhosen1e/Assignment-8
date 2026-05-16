@@ -7,6 +7,8 @@ import FlashSaleCard from "./FlashSaleCard";
 import { BsPercent } from 'react-icons/bs';
 import { LuMoveRight } from 'react-icons/lu';
 import Link from 'next/link';
+import { motion } from 'framer-motion';
+
 
 const FlashSale = () => {
   const [flashSale, setFlashSale] = useState([]);
@@ -58,7 +60,13 @@ const FlashSale = () => {
 
 
 
-        <Carousel responsive={responsive}>
+      <motion.div
+       initial={{ opacity: 0, y: 100 }}
+      animate={{ opacity: 1, y: 0.1 }}
+      transition={{ duration: 1.7 }}
+       
+       >
+         <Carousel responsive={responsive}>
   {flashSale.map((item) => (
     <FlashSaleCard
       key={item.id}
@@ -66,6 +74,7 @@ const FlashSale = () => {
     />
   ))}
 </Carousel>
+    </motion.div>
     </div>
   );
 };

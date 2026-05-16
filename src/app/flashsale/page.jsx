@@ -1,5 +1,5 @@
 "use client";
-
+import { motion } from 'framer-motion';
 import DiscountProductCard from "@/component/DiscountPoductCard";
 import { useEffect, useState } from "react";
 import { BsPercent } from "react-icons/bs";
@@ -56,14 +56,18 @@ const DiscountProductPage = () => {
       
 
       {/* Product Grid */}
-      <div className="grid grid-cols-3 gap-4">
+      <motion.div 
+      initial={{ opacity: 0, y: 100 }}
+      animate={{ opacity: 1, y: 0.1 }}
+      transition={{ duration: 1 }}
+      className="grid grid-cols-3 gap-4">
         {filteredProducts.map((item) => (
           <DiscountProductCard
             key={item.id}
             item={item}
           />
         ))}
-      </div>
+      </motion.div>
     </div>
   );
 };
