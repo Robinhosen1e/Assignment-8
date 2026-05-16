@@ -9,7 +9,7 @@ import { FaFacebookF, FaYoutube } from 'react-icons/fa';
 const Footer = () => {
     return (
         <div>
-            <footer className="footer sm:footer-horizontal bg-white text-base-content p-10">
+            <footer className="footer grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 bg-white text-base-content p-10">
   <aside className=''>
     <Image src={imgs} height={100} width={100} alt='logo' className='mb-2' />
 

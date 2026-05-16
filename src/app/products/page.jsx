@@ -62,7 +62,7 @@ const ProductPage = () => {
       animate={{ opacity: 1, y: 0.1 }}
       transition={{ duration: 1 }}
       
-      className="grid grid-cols-3 gap-4">
+      className="mx-auto grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 items-center gap-4">
         {filteredProducts.map((item) => (
           <ProductCard
             key={item.id}

@@ -25,7 +25,7 @@ const AllProductCard = ({item}) => {
     return (
         <div>
             <div>
-                        <div className="card card-side bg-white shadow-sm mr-5 border border-gray-200 h-70 w-113 p-3">
+                        <div className="card card-side bg-white shadow-sm mr-5 border border-gray-200 h-70 w-92 lg:w-113 p-3">
                           <figure>
                             <Image
                               src={item.image}
