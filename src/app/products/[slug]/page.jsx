@@ -13,7 +13,7 @@ const ProductDetail = () => {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    fetch('http://localhost:5000/products')
+    fetch('https://assignments-8-server.onrender.com/products')
       .then(res => res.json())
       .then(data => {
         const foundItem = data.find(item => {

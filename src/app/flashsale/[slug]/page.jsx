@@ -13,7 +13,7 @@ const DisCountProductDetail = () => {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    fetch('http://localhost:5000/flashSale')
+    fetch('https://assignments-8-server.onrender.com/flashSale')
       .then(res => res.json())
       .then(data => {
         const foundItem = data.find(item => {
