@@ -2,6 +2,7 @@ import { Open_Sans, Poppins } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/component/Navbar";
 import Footer from "@/component/Footer";
+import { ToastContainer } from "react-toastify";
 
 
 
@@ -27,6 +28,7 @@ export default function RootLayout({ children }) {
         <Navbar />
         <main>
           {children}
+          <ToastContainer />
         </main>
         <Footer />
       </body>

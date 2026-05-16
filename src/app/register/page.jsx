@@ -4,6 +4,7 @@ import { Button, Description, FieldError, Form, Input, Label, TextField } from "
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { FaGoogle } from "react-icons/fa";
+import { toast } from "react-toastify";
 
 const SignUpPage = () => {
 
@@ -42,10 +43,10 @@ const SignUpPage = () => {
 
         if (error) {
             console.error("Error signing up:", error);
-            alert(`Error signing up: ${error.message}`);
+            toast.error(`Error signing up: ${error.message}`);
         } else {
             console.log("Sign up successful:", data);
-            alert("Sign up successful! Please check your email to verify your account.");
+            toast.success("Sign up successful!");
             router.push(`/`)
         }
 
