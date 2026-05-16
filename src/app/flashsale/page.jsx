@@ -10,7 +10,7 @@ const DiscountProductPage = () => {
   const [selectedCategory, setSelectedCategory] = useState("All Product");
 
   useEffect(() => {
-    fetch("http://localhost:5000/flashSale")
+    fetch("https://assignments-8-server.onrender.com/flashSale")
       .then((res) => res.json())
       .then((data) => setProduct(data));
   }, []);

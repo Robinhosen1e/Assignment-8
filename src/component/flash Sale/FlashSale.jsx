@@ -12,7 +12,7 @@ const FlashSale = () => {
   const [flashSale, setFlashSale] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:5000/flashSale")
+    fetch("https://assignments-8-server.onrender.com/flashSale")
       .then((res) => res.json())
       .then((data) => setFlashSale(data));
   }, []);

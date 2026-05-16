@@ -1,8 +1,26 @@
 // component/DiscountProductCard.jsx
+import { authClient } from '@/lib/auth-client';
 import Image from 'next/image';
 import Link from 'next/link';
+import { useRouter } from 'next/navigation';
 
 const PopularProductCard = ({ item }) => {
+
+
+     const { data: session, isPending } = authClient.useSession();
+        const user = session?.user;
+  
+     const router = useRouter();
+  
+       const handleViewDetail = () => {
+      if (!user) {
+        router.push('/login');
+      } else {
+        router.push(`/popularproducts/${slug}`);
+      }
+    };
+
+
 
   const slug = item.name.toLowerCase().replace(/[^a-z0-9\s-]/g, '').trim().replace(/\s+/g, '-');
 
@@ -34,9 +52,9 @@ const PopularProductCard = ({ item }) => {
                     
                        <div className="flex ">
                          <button className="btn border text-sx font-medium text-gray-800 mb-2 border-[#f3790d] hover:bg-[#F48721] cursor-pointer hover:text-white py-0.5 px-5 rounded mr-4">Buy</button>
-                        <button className=" btn border text-sx font-medium  mb-2 border-[#f3790d] bg-[#F48721] text-white py-1 px-3 cursor-pointer rounded mr-2">
+                        <button className=" btn border text-sx font-medium  mb-2 border-[#f3790d] bg-[#F48721] text-white py-1 px-3 cursor-pointer rounded mr-2" onClick={handleViewDetail}>
 
-                                     <Link href={`/popularproducts/${slug}`} >View Detail</Link>
+                              View Detail
 
                                     </button>
                        </div>

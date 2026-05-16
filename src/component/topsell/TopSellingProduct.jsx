@@ -13,7 +13,7 @@ const TopSellingProduct = () => {
       const [topSellingProducts, setTopSellingProducts] = useState([]);
     
       useEffect(() => {
-        fetch("http://localhost:5000/topSellingProducts")
+        fetch("https://assignments-8-server.onrender.com/topSellingProducts")
           .then((res) => res.json())
           .then((data) => setTopSellingProducts(data));
       }, []);

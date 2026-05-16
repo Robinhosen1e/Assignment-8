@@ -13,7 +13,7 @@ const CustomerReview = () => {
   const [customerReviews, setCustomerReviews] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:5000/customerReviews")
+    fetch("https://assignments-8-server.onrender.com/customerReviews")
       .then((res) => res.json())
       .then((data) => setCustomerReviews(data));
   }, []);

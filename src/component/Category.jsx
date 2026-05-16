@@ -7,6 +7,7 @@ import Imag5 from '@/image/sunglasses.png';
 import Imag6 from '@/image/cap.png';
 import Imag7 from '@/image/sneakers.png';
 import Imag8 from '@/image/briefcase.png';
+import Link from 'next/link';
 
 
 const Category = () => {
@@ -16,30 +17,30 @@ const Category = () => {
             <h2 className='text-4xl font-bold text-center text-gray-800  '>Featured Categories</h2>
 
             <div className='flex gap-9 justify-center flex-wrap mt-13'>
-                <div className='p-3 bg-white rounded-full border border-gray-300 cursor-pointer hover:bg-[#f3780d8c] transition duration-300'>
+                <Link href="/products" className='p-3 bg-white rounded-full border border-gray-300 cursor-pointer hover:bg-[#f3780d8c] transition duration-300'>
                     <Image src={Imag1} alt="" width={40} height={40}  />
-                </div>
-                <div className='p-3 bg-white rounded-full border border-gray-300 cursor-pointer hover:bg-[#f3780d8c] transition duration-300'>
+                </Link>
+                <Link href="/products" className='p-3 bg-white rounded-full border border-gray-300 cursor-pointer hover:bg-[#f3780d8c] transition duration-300'>
                     <Image src={Imag2} alt="" width={40} height={40}  />
-                </div>
-                <div className='p-3 bg-white rounded-full border border-gray-300 cursor-pointer hover:bg-[#f3780d8c] transition duration-300'>
+                </Link>
+                <Link href="/products" className='p-3 bg-white rounded-full border border-gray-300 cursor-pointer hover:bg-[#f3780d8c] transition duration-300'>
                     <Image src={Imag3} alt="" width={40} height={40}  />
-                </div>
-                <div className='p-3 bg-white rounded-full border border-gray-300 cursor-pointer hover:bg-[#f3780d8c] transition duration-300'>
+                </Link>
+                <Link href="/products" className='p-3 bg-white rounded-full border border-gray-300 cursor-pointer hover:bg-[#f3780d8c] transition duration-300'>
                     <Image src={Imag4} alt="" width={40} height={40}  />
-                </div>
-                <div className='p-3 bg-white rounded-full border border-gray-300 cursor-pointer hover:bg-[#f3780d8c] transition duration-300'>
+                </Link>
+                <Link href="/products" className='p-3 bg-white rounded-full border border-gray-300 cursor-pointer hover:bg-[#f3780d8c] transition duration-300'>
                     <Image src={Imag5} alt="" width={40} height={40}  />
-                </div>
-                <div className='p-3 bg-white rounded-full border border-gray-300 cursor-pointer hover:bg-[#f3780d8c] transition duration-300'>
+                </Link>
+                <Link href="/products" className='p-3 bg-white rounded-full border border-gray-300 cursor-pointer hover:bg-[#f3780d8c] transition duration-300'>
                     <Image src={Imag6} alt="" width={40} height={40}  />
-                </div>
-                <div className='p-3 bg-white rounded-full border border-gray-300 cursor-pointer hover:bg-[#f3780d8c] transition duration-300'>
+                </Link>
+                <Link href="/products" className='p-3 bg-white rounded-full border border-gray-300 cursor-pointer hover:bg-[#f3780d8c] transition duration-300'>
                     <Image src={Imag7} alt="" width={40} height={40}  />
-                </div>
-                <div className='p-3 bg-white rounded-full border border-gray-300 cursor-pointer hover:bg-[#f3780d8c] transition duration-300'>
+                </Link>
+                <Link href="/products" className='p-3 bg-white rounded-full border border-gray-300 cursor-pointer hover:bg-[#f3780d8c] transition duration-300'>
                     <Image src={Imag8} alt="" width={40} height={40}  />
-                </div>
+                </Link>
             </div>
         </div>
        </div>

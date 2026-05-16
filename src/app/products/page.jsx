@@ -9,7 +9,7 @@ const ProductPage = () => {
   const [selectedCategory, setSelectedCategory] = useState("All Product");
 
   useEffect(() => {
-    fetch("http://localhost:5000/products")
+    fetch("https://assignments-8-server.onrender.com/products")
       .then((res) => res.json())
       .then((data) => setProduct(data));
   }, []);

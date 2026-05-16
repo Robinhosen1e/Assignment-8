@@ -11,7 +11,7 @@ const AllProduct = () => {
       const [heroAllProduct, setHeroAllProduct] = useState([]);
     
       useEffect(() => {
-        fetch("http://localhost:5000/allProduct")
+        fetch("https://assignments-8-server.onrender.com/allProduct")
           .then((res) => res.json())
           .then((data) => setHeroAllProduct(data));
       }, []);
